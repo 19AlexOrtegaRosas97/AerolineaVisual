@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D25A701-9F4B-434A-BE7F-EDA6087B732E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aerolínea_Al_Qaeda_Flyin</RootNamespace>
+    <AssemblyName>Aerolínea Al Qaeda Flyin</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatosForm.Designer.cs">
+      <DependentUpon>DatosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DijkstraElementos.cs" />
+    <Compile Include="Grafo.cs" />
+    <Compile Include="GrafoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrafoForm.Designer.cs">
+      <DependentUpon>GrafoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pasajero.cs" />
+    <Compile Include="Confirmacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmacion.Designer.cs">
+      <DependentUpon>Confirmacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasajerosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasajerosForm.Designer.cs">
+      <DependentUpon>PasajerosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaAsientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaAsientos.Designer.cs">
+      <DependentUpon>VentanaAsientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaFormulario.Designer.cs">
+      <DependentUpon>VentanaFormulario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaVuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaVuelos.Designer.cs">
+      <DependentUpon>VentanaVuelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaPrincipal.Designer.cs">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vuelo.cs" />
+    <Compile Include="VueloInteligenteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VueloInteligenteForm.Designer.cs">
+      <DependentUpon>VueloInteligenteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VueloNuevoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VueloNuevoForm.Designer.cs">
+      <DependentUpon>VueloNuevoForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Confirmacion.resx">
+      <DependentUpon>Confirmacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatosForm.resx">
+      <DependentUpon>DatosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrafoForm.resx">
+      <DependentUpon>GrafoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasajerosForm.resx">
+      <DependentUpon>PasajerosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaAsientos.resx">
+      <DependentUpon>VentanaAsientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaFormulario.resx">
+      <DependentUpon>VentanaFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaVuelos.resx">
+      <DependentUpon>VentanaVuelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaPrincipal.resx">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="VueloInteligenteForm.resx">
+      <DependentUpon>VueloInteligenteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueloNuevoForm.resx">
+      <DependentUpon>VueloNuevoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="ClassDiagram5.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paisajes exoticos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asientos-de-avion.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
